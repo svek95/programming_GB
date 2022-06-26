@@ -1,0 +1,15 @@
+/Users/artemmeinov/Documents/GeekBrains_kurse/programming_GB/bin/Debug/net6.0/programming_GB
+/Users/artemmeinov/Documents/GeekBrains_kurse/programming_GB/bin/Debug/net6.0/programming_GB.deps.json
+/Users/artemmeinov/Documents/GeekBrains_kurse/programming_GB/bin/Debug/net6.0/programming_GB.runtimeconfig.json
+/Users/artemmeinov/Documents/GeekBrains_kurse/programming_GB/bin/Debug/net6.0/programming_GB.dll
+/Users/artemmeinov/Documents/GeekBrains_kurse/programming_GB/bin/Debug/net6.0/programming_GB.pdb
+/Users/artemmeinov/Documents/GeekBrains_kurse/programming_GB/obj/Debug/net6.0/programming_GB.csproj.AssemblyReference.cache
+/Users/artemmeinov/Documents/GeekBrains_kurse/programming_GB/obj/Debug/net6.0/programming_GB.GeneratedMSBuildEditorConfig.editorconfig
+/Users/artemmeinov/Documents/GeekBrains_kurse/programming_GB/obj/Debug/net6.0/programming_GB.AssemblyInfoInputs.cache
+/Users/artemmeinov/Documents/GeekBrains_kurse/programming_GB/obj/Debug/net6.0/programming_GB.AssemblyInfo.cs
+/Users/artemmeinov/Documents/GeekBrains_kurse/programming_GB/obj/Debug/net6.0/programming_GB.csproj.CoreCompileInputs.cache
+/Users/artemmeinov/Documents/GeekBrains_kurse/programming_GB/obj/Debug/net6.0/programming_GB.dll
+/Users/artemmeinov/Documents/GeekBrains_kurse/programming_GB/obj/Debug/net6.0/refint/programming_GB.dll
+/Users/artemmeinov/Documents/GeekBrains_kurse/programming_GB/obj/Debug/net6.0/programming_GB.pdb
+/Users/artemmeinov/Documents/GeekBrains_kurse/programming_GB/obj/Debug/net6.0/programming_GB.genruntimeconfig.cache
+/Users/artemmeinov/Documents/GeekBrains_kurse/programming_GB/obj/Debug/net6.0/ref/programming_GB.dll
