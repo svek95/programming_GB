@@ -24,6 +24,7 @@ public class Start
         HomeWork HW = new HomeWork();
         
         Console.Write("Wich task: ");
+        Console.WriteLine("WH2 is 10, 13, 15");
         int taskNumver = Convert.ToInt32(Console.ReadLine());
         switch (taskNumver)
         {
@@ -41,7 +42,21 @@ public class Start
             case 4:
                 HW.Foth_task();
                 break;
-
+            case 10:
+                Console.WriteLine("Input number: ");
+                int number10 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Resault is: " + HW.Task_10(number10)); 
+                break;
+            case 13:
+                Console.WriteLine("Input number: ");
+                int number13 = Convert.ToInt32(Console.ReadLine());
+                HW.Task_13(number13);
+                break;
+            case 15:
+                Console.WriteLine("Input number of day: ");
+                int dateNumber = Convert.ToInt32(Console.ReadLine());
+                HW.Task_15(dateNumber);
+                break;
 
             default:
                 Console.WriteLine("Wrong task");

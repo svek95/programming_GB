@@ -2,7 +2,7 @@
 {
     class HomeWork
     {
-
+        int resaultHW;
         
         public void First_task()
         {
@@ -65,9 +65,38 @@
 
 
         }
-        
-        
-        
+
+        public int Task_10(int number)
+        {   
+//            if (number % 100 == 0)
+            resaultHW  = number % 100 / 10;
+            return resaultHW;
+        }
+
+        public void Task_13(int number)
+        {
+            string numberToString = Convert.ToString(number);
+            if (numberToString.Length > 2){
+                Console.WriteLine("Third digit is: " + numberToString[2]);
+            }
+            else {
+                Console.WriteLine("Third digit is empty");
+            }
+        }
+
+        public void Task_15(int dateNumber)
+        {
+            if (dateNumber <= 0 || dateNumber > 7)
+            {
+                Console.WriteLine("Not a day!!!");
+            }
+            else if (dateNumber == 6 || dateNumber == 7)
+                Console.WriteLine("Yes");
+            else
+            {
+                Console.WriteLine("No!!!");
+            }
+        }
 
 
 
