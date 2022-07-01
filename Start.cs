@@ -4,7 +4,7 @@ public class Start
 {
     static void Main()
     {
-        Console.Write("HW or Practic: ");
+        Console.Write("HW (1) or Practic (2): ");
         int taskNumver = Convert.ToInt32(Console.ReadLine());
         switch (taskNumver)
         {
@@ -68,11 +68,19 @@ public class Start
                 break;
 
             case 3:
-               
+//                Console.WriteLine();
+                Console.WriteLine("Input X");
+                int X = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Input Y");
+                int Y = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Quarter is: " + pract.WhereDot(X, Y));
                 break;
 
             case 4:
-                
+                Console.WriteLine("Input number: ");
+                int number = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Resault is:");
+                pract.Quad(number);
                 break;
 
 
