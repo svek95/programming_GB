@@ -97,7 +97,23 @@ public class Start
                 Console.WriteLine("Resault is:");
                 pract.Quad(number);
                 break;
-
+            case 5:
+                Console.WriteLine("Input number");
+                int number1 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Resault is:" + pract.countNumber(number1));
+                break;
+            case 6:
+                Console.WriteLine("Input number");
+                int number2 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Resault is:" + pract.factNumber(number2));
+                break;
+            case 7:
+                Console.WriteLine("Input first number");
+                int A = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Input second number");
+                int B = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Step: " + pract.stepNum(A, B));
+                break;
 
             default:
                 Console.WriteLine("Wrong task");
