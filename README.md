@@ -11,3 +11,8 @@
 - [X] Task_10
 - [X] Task_13
 - [X] Task_15
+
+
+## HW3
+- [X] Task_19
+- [X] Task_23

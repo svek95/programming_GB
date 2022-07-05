@@ -3,6 +3,7 @@
     class HomeWork
     {
         int resaultHW;
+        private int counter;
         
         public void First_task()
         {
@@ -68,7 +69,6 @@
 
         public int Task_10(int number)
         {   
-//            if (number % 100 == 0)
             resaultHW  = number % 100 / 10;
             return resaultHW;
         }
@@ -95,6 +95,29 @@
             else
             {
                 Console.WriteLine("No!!!");
+            }
+        }
+
+        public void Task_19(string number)
+        {   
+            bool isNumeric = int.TryParse(number, out int n);
+            if (number.Length != 5 || isNumeric is false)
+                Console.WriteLine("Number is wrong or not is number");
+            else
+            { 
+                string reverseNumber = string.Concat(number.Reverse());
+                Console.WriteLine(number == reverseNumber ? "YES" : "NO");   
+            }
+        }
+        
+        public void Task_23(int number)
+        {
+            counter = 1;
+            while (counter <= number)
+            {
+                int cube = counter * counter * counter;
+                Console.WriteLine($"{counter}^3 = {cube}");
+                counter++;
             }
         }
 

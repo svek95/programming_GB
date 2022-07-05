@@ -19,12 +19,24 @@ public class Start
         }
     }
 
+    static void PrintNumberConsole()
+    {
+        Console.WriteLine("Input number: ");
+    }
+    
+    static int ReadIntNumber()
+    {
+        int number = Convert.ToInt32(Console.ReadLine());
+        return number;
+    }
+
     static void MyTask()
     {
         HomeWork HW = new HomeWork();
-        
+
         Console.Write("Wich task: ");
         Console.WriteLine("WH2 is 10, 13, 15");
+        Console.WriteLine("WH3 is 19, 23");
         int taskNumver = Convert.ToInt32(Console.ReadLine());
         switch (taskNumver)
         {
@@ -44,18 +56,23 @@ public class Start
                 break;
             case 10:
                 Console.WriteLine("Input number: ");
-                int number10 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Resault is: " + HW.Task_10(number10)); 
+                Console.WriteLine("Resault is: " + HW.Task_10(ReadIntNumber())); 
                 break;
             case 13:
                 Console.WriteLine("Input number: ");
-                int number13 = Convert.ToInt32(Console.ReadLine());
-                HW.Task_13(number13);
+                HW.Task_13(ReadIntNumber());
                 break;
             case 15:
                 Console.WriteLine("Input number of day: ");
-                int dateNumber = Convert.ToInt32(Console.ReadLine());
-                HW.Task_15(dateNumber);
+                HW.Task_15(ReadIntNumber());
+                break;
+            case 19:
+                PrintNumberConsole();
+                HW.Task_19(Console.ReadLine()); 
+                break;
+            case 23:
+                PrintNumberConsole();
+                HW.Task_23(ReadIntNumber());
                 break;
 
             default:
