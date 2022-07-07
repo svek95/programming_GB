@@ -121,6 +121,37 @@
             }
         }
 
+        public int Task_27(int number)
+        {
+            if (number == 0)
+                return 0;
+            else
+                return number % 10 + Task_27(number / 10);
+        }
+
+        public void Task_29(int size)
+        {
+            int[] array = new int[size];
+            
+           for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine($"Input {i} number to array");
+                int number = Convert.ToInt32(Console.ReadLine());
+                array[i] = number;
+            }
+
+            /// Ввод рандомных элементов массива 
+/*            Random myRandom = new Random();
+ 
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = myRandom.Next(0, 100000); /// чтобы цифры были не over99999 
+             //   Console.Write("{0} ", array[i]);
+            }*/
+
+            Console.WriteLine("Array is: " + "[{0}]", string.Join(", ", array));
+        }
+
 
 
     }

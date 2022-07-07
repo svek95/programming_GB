@@ -74,6 +74,15 @@ public class Start
                 PrintNumberConsole();
                 HW.Task_23(ReadIntNumber());
                 break;
+            case 27:
+                PrintNumberConsole();
+                Console.WriteLine("Resault is: " + HW.Task_27(ReadIntNumber()));
+                break;
+            case 29:
+                Console.WriteLine("Length for array: ");
+                HW.Task_29(ReadIntNumber());
+                break;
+
 
             default:
                 Console.WriteLine("Wrong task");
