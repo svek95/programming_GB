@@ -140,6 +140,25 @@ public class Start
                 int B = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Step: " + pract.stepNum(A, B));
                 break;
+            
+            case 8:
+                Console.WriteLine("Input size mass");
+                int size = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Input min");
+                int min = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Input max");
+                int max = Convert.ToInt32(Console.ReadLine());
+                pract.chengeMass(pract.newRandomMass(size, min, max));
+                break;
+            
+            case 9:
+                Console.WriteLine("Input min");
+                int min1 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Input max");
+                int max1 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Count: " + pract.mass20random(pract.newRandomMass(20, min1, max1)));
+
+                break;
 
             default:
                 Console.WriteLine("Wrong task");
