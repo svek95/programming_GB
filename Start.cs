@@ -33,6 +33,7 @@ public class Start
     static void MyTask()
     {
         HomeWork HW = new HomeWork();
+        Practics pract = new Practics();
 
         Console.Write("Wich task: ");
         Console.WriteLine("WH2 is 10, 13, 15");
@@ -81,6 +82,32 @@ public class Start
             case 29:
                 Console.WriteLine("Length for array: ");
                 HW.Task_29(ReadIntNumber());
+                break;
+            case 34:
+                Console.WriteLine("Input size mass");
+                int size = Convert.ToInt32(Console.ReadLine());
+                int min = 100;
+                int max = 999;
+                Console.WriteLine("Evan's number is: " + HW.Task_34(pract.newRandomMass(size, min, max)));
+                break;
+            case 36:
+                Console.WriteLine("Input size mass");
+                int size1 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Input min");
+                int min1 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Input max");
+                int max1 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Summ is: " + HW.Task_36(pract.newRandomMass(size1, min1, max1)));
+                break;
+            case 38:
+                Console.WriteLine("Input size mass");
+                int size2 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Input min");
+                int min2 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Input max");
+                int max2 = Convert.ToInt32(Console.ReadLine());
+                //Console.WriteLine("Summ is: " + HW.Task_38(pract.newRandomMass(size2, min2, max2)));
+                HW.Task_38(pract.newRandomMass(size2, min2, max2));
                 break;
 
 

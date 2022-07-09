@@ -2,6 +2,7 @@
 {
     class HomeWork
     {
+        Practics pract = new Practics();
         int resaultHW;
         private int counter;
         
@@ -151,6 +152,54 @@
 
             Console.WriteLine("Array is: " + "[{0}]", string.Join(", ", array));
         }
+        
+        public int Task_34(int[] array)
+        {
+            counter = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] % 2 == 0)
+                    counter++;
+
+            }
+            return counter;
+        }
+
+        public int Task_36(int[] array)
+        {
+            resaultHW = 0; 
+            for (int i = 1; i < array.Length; i++)
+            {
+                if (i % 2 != 1)
+                    resaultHW += array[i];
+
+            }
+            return resaultHW;
+        }
+        
+        public void Task_38(int[] array)
+        {
+            resaultHW = 0;
+            int maxElement = array[0];
+            int minElement = array[0];                
+            for (int i = 1; i < array.Length; i++)
+            {
+                if (maxElement < array[i])
+                {
+                    maxElement = array[i];
+                }
+                if (minElement > array[i])
+                {
+                    minElement = array[i];
+                }
+                
+                resaultHW = maxElement - minElement;
+
+            }
+            Console.WriteLine($"\nDev between max element ({maxElement}) and min ({minElement}) is: {resaultHW}");
+
+        }
+
 
 
 
