@@ -184,7 +184,23 @@ public class Start
                 Console.WriteLine("Input max");
                 int max1 = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Count: " + pract.mass20random(pract.newRandomMass(20, min1, max1)));
-
+                break;
+            
+            case 10:
+                Console.WriteLine("First side");
+                int a = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Second side");
+                int b = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Third side");
+                int c = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(pract.trueTrigl(a, b, c));
+                break;
+            
+            case 11:
+                Console.WriteLine("Input number");
+                int number10 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Rwsault is: ");
+                pract.printArray(pract.fibanach(number10));
                 break;
 
             default:
