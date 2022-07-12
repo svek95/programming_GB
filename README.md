@@ -21,3 +21,9 @@
 ## HW4
 - [X] Task_27
 - [X] Task_29
+
+
+## HW5
+- [X] Task_34
+- [X] Task_36
+- [X] Task_38
