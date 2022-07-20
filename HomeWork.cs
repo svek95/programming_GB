@@ -152,6 +152,11 @@
 
             Console.WriteLine("Array is: " + "[{0}]", string.Join(", ", array));
         }
+
+        public void PrintArray(double[] array)
+        {
+            Console.WriteLine("[{0}]", string.Join(", ", array));
+        }
         
         public int Task_34(int[] array)
         {
@@ -197,8 +202,86 @@
 
             }
             Console.WriteLine($"\nDev between max element ({maxElement}) and min ({minElement}) is: {resaultHW}");
+        }
+
+        public int[] craeteMass(int size)
+        {
+            int[] array = new int[size];
+            
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine($"Input {i+1} number: ");
+                int number = Convert.ToInt32(Console.ReadLine());
+                array[i] = number;
+            }
+
+            return array;
 
         }
+
+        public int Tak_41(int[] array)
+        {
+            counter = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if(array[i] > 0 ) counter += 1; 
+            }
+            return counter;
+        }
+
+        public double[] Task_43(double b1, double k1, double b2, double k2)
+        {
+            double x = (b2 - b1) / (k1 - k2);
+            double y = k1 * x + b1;
+            double[] dotCross = new[] {x, y};
+
+            return dotCross;
+
+            //          Console.WriteLine("x = " + x + "y = " + y );
+
+        }
+
+        public double[,] Task_47(int rows, int columns)
+        {
+            Random rand = new Random();
+            double[,] newArray = new double[rows, columns];
+            Console.WriteLine("   ");
+            for (int i = 0; i < rows; i++)
+            for (int k = 0; k < columns; k++)
+                newArray[i, k] =  rand.Next(-100, 200) + rand.Next(0, 9) / 10.0;
+            return newArray;
+
+        }
+
+
+        public void Task_50(int[,] array, int rowsIndex, int columnsIndex)
+        {
+            if (rowsIndex > array.GetLength(0) || columnsIndex > array.GetLength(1)) 
+                Console.WriteLine($"Not element in array in [{rowsIndex},{columnsIndex}]");
+
+            else
+                Console.WriteLine("Element  in [{rowsIndex},{columnsIndex}] is: " + array[rowsIndex, columnsIndex]);
+            
+        }
+
+        public void Task_52(int[,] array)
+        {
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                int meanArray = 0;
+                int ColChetn = 0;
+                for (int k = 0; k < array.GetLength(1); k++)
+                {
+                    meanArray += array[k, i];
+
+                }
+
+                Console.WriteLine($"Arithmetic mean of column elements {i + 1} = {(float)meanArray / array.GetLength(1)}");
+
+            }
+
+        }
+        
 
 
 

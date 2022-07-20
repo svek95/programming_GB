@@ -27,3 +27,12 @@
 - [X] Task_34
 - [X] Task_36
 - [X] Task_38
+
+## HW6
+- [X] Task_41
+- [X] Task_43
+
+## HW7
+- [X] Task_47
+- [X] Task_50
+- [X] Task_52
