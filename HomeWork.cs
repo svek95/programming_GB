@@ -281,7 +281,61 @@
             }
 
         }
-        
+
+        public int[,] Task_54(int[,] array2d)
+        {
+            for (int i = 0; i < array2d.GetLength(0); i++)
+            for (int j = 0; j < array2d.GetLength(1); j++)
+            for (int k = 0; k < array2d.GetLength(1) - 1; k++)
+                if (array2d[i, k] < array2d[i, k + 1])
+                    (array2d[i, k + 1], array2d[i, k]) = (array2d[i, k], array2d[i, k + 1]);
+
+            return array2d;
+        }
+
+        int i = 0;
+        int row = 0;
+        public int Task_56(int[,] array2d)
+        {
+            
+            int summ = 0, summ1 = 0, summ2 = 0;
+            
+            for(int i = 0; i < array2d.GetLength(0); i++) 
+                for(int j = 0; j < array2d.GetLength(1); j++) 
+                    summ2 += array2d[i, j];  
+                if(summ2 < summ1)
+                   summ = summ2; row = i;
+                summ1 = summ2;
+                
+           return row;
+
+        }
+
+
+        public int[,] Task_62(int n)
+        {
+            int[,] snakeArray = new int[n, n];
+
+            int temp = 1;
+            int i = 0, j = 0;
+            
+            while (temp <= snakeArray.GetLength(0) * snakeArray.GetLength(1))
+            {
+                snakeArray[i, j] = temp;
+                temp++;
+                if (i <= j + 1 && i + j < snakeArray.GetLength(1) - 1)
+                    j++;
+                else if (i < j && i + j >= snakeArray.GetLength(0) - 1)
+                    i++;
+                else if (i >= j && i + j > snakeArray.GetLength(1) - 1)
+                    j--;
+                else
+                    i--;
+            }
+
+            return snakeArray;
+        }
+
 
 
 

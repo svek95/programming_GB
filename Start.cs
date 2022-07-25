@@ -37,8 +37,8 @@ public class Start
         Tools myTools = new Tools();
 
         Console.Write("Wich task: ");
-        Console.WriteLine("WH2 is 10, 13, 15");
-        Console.WriteLine("WH3 is 19, 23");
+        Console.WriteLine("WH8 is 54, 56, 62");
+//        Console.WriteLine("WH3 is 19, 23");
         int taskNumver = Convert.ToInt32(Console.ReadLine());
         switch (taskNumver)
         {
@@ -151,8 +151,32 @@ public class Start
                 int[,] data52 = myTools.CreateRandom2dArray(4, 4, 0, 3);
                 myTools.ShowInt2dArray(data52);
                 HW.Task_52(data52);
+                break;
+            
+            
+            case 54:
+                int[,] data54 = myTools.CreateRandom2dArray(5, 5, -10, 10);
+                myTools.ShowInt2dArray(data54);
+                Console.WriteLine("Res array is: ");
+                myTools.ShowInt2dArray(HW.Task_54(data54));
+
+                break;
+            
+            case 56:
+                int[,] data56 = myTools.CreateRandom2dArray(5, 3, 0, 5);
+                myTools.ShowInt2dArray(data56);
+                Console.WriteLine("   ");
+                Console.WriteLine("Max row is: " + HW.Task_56(data56));
                 
                 break;
+            
+            case 62:
+                Console.WriteLine("Input N: ");
+                int n = Convert.ToInt32(Console.ReadLine());
+                myTools.ShowInt2dArray(HW.Task_62(n));
+                break;
+
+            
             
             case 100:
                 int[] data47 = myTools.RiadeLine4data();
