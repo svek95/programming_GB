@@ -37,7 +37,7 @@ public class Start
         Tools myTools = new Tools();
 
         Console.Write("Wich task: ");
-        Console.WriteLine("WH8 is 54, 56, 62");
+        Console.WriteLine("WH9 is 64, 66");
 //        Console.WriteLine("WH3 is 19, 23");
         int taskNumver = Convert.ToInt32(Console.ReadLine());
         switch (taskNumver)
@@ -174,6 +174,20 @@ public class Start
                 Console.WriteLine("Input N: ");
                 int n = Convert.ToInt32(Console.ReadLine());
                 myTools.ShowInt2dArray(HW.Task_62(n));
+                break;
+            
+            case 64:
+                Console.WriteLine("Input number: ");
+                int number64 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Count numbers is: "+HW.Task_64(number64));
+                break;
+            
+            case 66:
+                Console.WriteLine("Input M: ");
+                int M = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Input N: ");
+                int N = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Summ is: "+HW.Task_66(M, N)+ $" between numbers {M} and {N} ");
                 break;
 
             

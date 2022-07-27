@@ -335,6 +335,21 @@
 
             return snakeArray;
         }
+        
+        public int Task_64(int number)
+        {
+            if (number / 10 != 0)
+                return 1 + Task_64(number / 10);
+            return 1;
+        }
+
+        public int Task_66(int M, int N)
+        {
+            if (N == M-1)
+                return 0;
+            return N + Task_66(M, N-1);
+
+        }
 
 
 
